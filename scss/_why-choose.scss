@@ -1,0 +1,54 @@
+@import "variables";
+
+.why-choose {
+	background-image: url(../assets/images/why_choose_bg.png);
+	@include background-layout();
+	
+	&__container {
+		padding: 5% $global-horizontal-padding;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__info {
+		width: 48%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		text-align: left;
+	}
+
+	&__title {
+		text-transform: capitalize;
+	}
+
+	&__text {
+		font-weight: lighter;
+	}
+
+	&__images {
+		width: 48%;
+		display: inline-block;
+		position: relative;
+	}
+
+	&__img {
+		position: absolute;
+		width: 65%;
+	}
+
+	&__img:first-child {
+		left: 12%;
+		top: 0;
+	}
+
+	&__img:last-child {
+		left: 35%;
+		top: 51%;
+	}
+
+	&__button {
+		@include button;
+		margin-top: 20px;
+	}
+}

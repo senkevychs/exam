@@ -1,0 +1,45 @@
+@import "variables";
+
+.navbar {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 10%;
+	background-color: $navbar-color;
+	
+	&__container {
+		height: 100%;
+		padding: 0 $global-horizontal-padding;
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo {
+		width: 40%;
+		height: 1em;
+		text-align: left;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: inherit;
+	}
+
+	&__links-container {
+		width: 60%;
+		height: 33%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__link {
+		padding: 0 10px;
+		font-size: 14px;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: inherit;
+		
+		&:hover {
+			color: #e4e4e4;
+		}
+	}
+}

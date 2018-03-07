@@ -1,0 +1,36 @@
+@import "variables";
+
+.countries__article {
+	@include background-layout();
+}
+
+.about-country {
+	background-color: rgba(34, 33, 34, 0.9);
+	margin-top: 14%;
+	margin-bottom: 14%;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	&__name {
+		display: block;
+		padding: 10% 20px 0;
+	}
+
+	&__title {
+		display: block;
+		padding: 5% 20px 0;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		display: block;
+		padding: 5% 20px 0;
+	}
+
+	&__button {
+		@include button;
+		margin: 5% 20px 10%;
+	}
+}

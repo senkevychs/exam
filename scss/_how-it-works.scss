@@ -1,0 +1,25 @@
+@import "variables";
+
+.how-it-works {
+	background-color: $how-it-works-color;
+	
+	&__container {
+		padding: 10% $global-horizontal-padding;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__icon {
+		width: 96px;
+		height: 96px;
+		padding: 10px 0;
+	}
+
+	&__text {
+		display: block;
+		text-transform: capitalize;
+		padding-top: 15px;
+		font-size: 36px;
+	}
+}

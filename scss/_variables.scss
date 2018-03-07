@@ -1,0 +1,41 @@
+$text-color: white;
+$navbar-color: #5474fd;
+$how-it-works-color: #333;
+$footer-color: #232323;
+$button-color: #5474fd;
+$button-hover-color: #496bfe;
+$placeholder-color: #e4e4e4;
+
+$global-horizontal-padding: 20%;
+
+@mixin background-layout {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+}
+
+@mixin button {
+	width: 225px;
+	height: 60px;
+	padding: 15px 0;
+
+	background-color: $button-color;
+	border: none;
+	
+	text-transform: uppercase;
+	
+	&:hover {
+		background-color: $button-hover-color;
+	}
+
+	&:focus {
+		outline: dotted 1px gray;
+	}
+
+	&:active {
+		outline: none;
+	}
+
+	transition: background-color 1s ease;
+}

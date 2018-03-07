@@ -1,0 +1,53 @@
+@import "variables";
+@import "logo";
+@import "header";
+@import "navbar";
+@import "why-choose";
+@import "how-it-works";
+@import "countries";
+@import "testimonial";
+@import "footer";
+
+@font-face {
+    font-family: 'AleoRegular';
+    font-weight: normal;
+    font-style: normal;
+    src: url(../assets/fonts/Aleo-Regular.otf);
+}
+
+@font-face {
+    font-family: 'JosefinSans';
+    font-weight: normal;
+    font-style: normal;
+    src: url(../assets/fonts/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'JosefinSans';
+    font-weight: lighter;
+    font-style: normal;
+    src: url(../assets/fonts/JosefinSans-Light.ttf);
+}
+
+@font-face {
+    font-family: 'JosefinSans';
+    font-weight: bold;
+    font-style: normal;
+    src: url(../assets/fonts/JosefinSans-Bold.ttf);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color: $text-color;
+	font-family: 'JosefinSans', sans-serif;
+	font-weight: lighter;
+	margin: 0 auto;
+	text-align: center;
+}
+
+a:focus {
+    outline: none;
+}
